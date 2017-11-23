@@ -1,0 +1,6 @@
+---  # test file for chkrootkit
+- hosts: localhost
+  become: true
+  connection: local
+  roles:
+    - ../../

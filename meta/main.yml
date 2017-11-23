@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  author: Maxime Lareo
+  description: Install and configure chkrootkit
+  license: MIT
+  min_ansible_version: 2.0.0.0
+  platforms:
+    - name: Debian
+      versions:
+        - stretch
+        - jessie
+    - name: Ubuntu
+      versions:
+        - zesty
+        - trusty
+
+  galaxy_tags:
+    - chkrootkit
+    - security
+    - audit
+
+dependencies: []

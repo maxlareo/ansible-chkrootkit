@@ -1,0 +1,24 @@
+---  # tasks file for chkrootkit
+
+- name: Install chkrootkit
+  apt:
+    name: chkrootkit
+    update_cache: true
+    cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
+    state: present
+  tags:
+    - install
+    - chkrootkit
+    - chkrootkit-install
+
+- name: Configure /etc/chkrootkit.conf
+  template:
+    src: "etc/chkrootkit.conf.j2"
+    dest: /etc/chkrootkit.conf
+    owner: root
+    group: root
+    mode: 0644
+  tags:
+    - configuration
+    - chkrootkit
+    - chkrootkit-configuration
