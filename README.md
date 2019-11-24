@@ -5,10 +5,6 @@ chkrootkit
 
 Install and configure Chkrootkit
 
-## Requirements
-
-None
-
 ## Role Variables
 
 ### About the `/etc/chkrootkit.conf` file
@@ -33,11 +29,3 @@ None
 ## License
 
 MIT
-
-## Author Information
-
-[Maxime Lareo](https://github.com/maxlareo)
-
-## Feedback, bug-reports, requests, ...
-
-Are [welcome](https://github.com/maxlareo/ansible-chkrootkit/issues)!

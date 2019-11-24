@@ -1,6 +1,4 @@
----  # defaults file for chkrootkit
-
-# /etc/chkrootkit.conf
+---
 chkrootkit_run_daily: 'false'
 chkrootkit_run_daily_opts: '-q'
 chkrootkit_diff_mode: 'false'
